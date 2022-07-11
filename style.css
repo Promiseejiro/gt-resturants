@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button,
+label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+input,
+textarea {
+  display: block;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  color: goldenrod;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 2em 0;
+  padding: 0 2em;
+}
+
+/* pop up */
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 5em;
+  z-index: 2;
+}
+
+.pop-content {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background-color: firebrick;
+  border-radius: 1em;
+  padding: 5em 0;
+}
+
+.pop-content p {
+  color: goldenrod;
+  padding: 1em;
+  font-size: 18px;
+}
+
+.btn-cancel {
+  position: absolute;
+  right: -0.5em;
+  top: -0.5em;
+  height: 2em;
+  width: 2em;
+  background-color: goldenrod;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  color: firebrick;
+}
+
+header {
+  background-color: goldenrod;
+  color: firebrick;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+header h1 {
+  border-left: 3px solid firebrick;
+  padding-left: 10px;
+}
+
+header img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.hero {
+  position: relative;
+  background: url("combination-of-food.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero h2 {
+  color: rgb(97%, 52%, 0%);
+  font: 20px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay div {
+  background-color: rgba(178, 34, 34, 0.8);
+  padding: 3em 1em;
+}
+
+.hero p {
+  color: orange;
+  font-size: 18px;
+}
+
+.animation-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: goldenrod;
+  animation-name: revole;
+  animation-duration: 20s;
+  animation-fill-mode: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes revole {
+  0% {
+    left: 0;
+    top: 10px;
+  }
+
+  20% {
+    top: 7em;
+    left: 20em;
+  }
+
+  30% {
+    top: 17em;
+    left: 9em;
+  }
+
+  50% {
+    top: 19em;
+    left: 25em;
+  }
+
+  60% {
+    top: 10em;
+  }
+
+  80% {
+    top: 12em;
+    left: 10em;
+  }
+
+  90% {
+    top: 22em;
+  }
+
+  100% {
+    left: 13em;
+    top: 100%;
+  }
+}
+
+.menu-section h2 {
+  text-align: center;
+  padding: 1.5em 0;
+  color: goldenrod;
+}
+
+.menu-items {
+  padding: 2em 3em;
+}
+
+.menu-item {
+  width: 100%;
+  border: 2px dotted goldenrod;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+
+.menu-item img {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+}
+
+.menu-item h6 {
+  padding: 1em 0 0.1em 0;
+  font-size: 20px;
+  color: goldenrod;
+}
+
+.menu-item p {
+  color: goldenrod;
+}
+
+.menu-item button {
+  background-color: firebrick;
+  color: goldenrod;
+  border: none;
+  padding: 0.5em;
+}
+
+.menu-table {
+  padding: 2em;
+}
+
+table {
+  width: 100%;
+  padding: 0 2em;
+}
+
+th {
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+td {
+  padding-left: 1em;
+  padding: 0.2em 0;
+}
+
+tr:nth-child(odd) {
+  background-color: firebrick;
+  color: goldenrod;
+}
+
+tr:nth-child(even) {
+  background-color: goldenrod;
+  color: firebrick;
+}
+
+.row {
+  padding: 1em;
+  border: 2px solid red;
+}
+
+th {
+  text-align: left;
+}
+
+form {
+  margin-top: 1em;
+  padding: 1em 3em;
+  background-color: goldenrod;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 3em;
+}
+
+form p {
+  text-align: center;
+  color: firebrick;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 2em;
+}
+
+.form-control {
+  padding: 0.2em 0 0.3em 1em;
+  margin-top: 0.2em;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 15px;
+  color: firebrick;
+}
+
+input {
+  width: 100%;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 0.1em;
+  padding: 0.3em 1em;
+}
+
+textarea {
+  width: 100%;
+  height: 5em;
+  padding: 0.3em 1em;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  background-color: firebrick;
+  color: goldenrod;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5em 0;
+}
+
+video {
+  width: 80%;
+  display: block;
+  border: 2px solid;
+  margin: auto;
+  height: 100%;
+}
+
+audio {
+  width: 80%;
+  margin: 2em auto;
+}
+
+footer {
+  background-color: goldenrod;
+  width: 100%;
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h5 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  color: firebrick;
+  text-align: center;
+}
+
+footer p {
+  color: firebrick;
+  font-size: 16px;
+}
+
+footer p a {
+  color: black;
+}
+
+@media (min-width: 735px) {
+  .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  form {
+    width: 40%;
+  }
+}
