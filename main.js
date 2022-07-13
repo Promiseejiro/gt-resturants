@@ -9,9 +9,9 @@ const showPop = () => {
 const closePop = () => {
   pop.style.display = "none";
 };
-form.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  showPop()
+  showPop();
 });
 
 cancelBtn.addEventListener("click", closePop);
